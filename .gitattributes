@@ -1,2 +1,40 @@
-# Auto detect text files and perform LF normalization
+
+# Automatically normalize line endings for text files
 * text=auto
+
+# Python source files
+*.py text eol=lf
+*.ipynb text eol=lf
+
+# Documentation and configuration files
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+
+# Web files
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.exe binary
+
+# Ignore generated Python bytecode as text (Git should not track these)
+*.pyc binary
